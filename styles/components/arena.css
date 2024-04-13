@@ -1,0 +1,118 @@
+.game-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2em 15em 0 15em;
+  width: 100%;
+}
+
+.arena {
+  width: 50%;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tiles {
+  padding: 2em;
+  width: 33em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 0.3em;
+}
+
+.tile {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background-color: var(--clr-tile);
+  border-radius: 5px;
+  border-bottom-right-radius: 8px;
+  border-bottom: 3px solid var(--clr-magenta);
+  border-right: 3px solid var(--clr-magenta);
+  box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.5);
+  border-top: none;
+  border-left: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mine {
+  background-image: url("/assets/1200x630wa.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mine {
+  background-color: red;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+}
+
+.heading-container {
+  font-size: var(--size-3xl);
+  color: var(--clr-blush);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.sidebar {
+  width: 30%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 0 2em 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.play-again-btn {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 10%;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: var(--clr-grape);
+  color: var(--clr-blush);
+  font-weight: 500;
+  font-size: var(--size-xl);
+  border: 2px solid var(--clr-blush);
+  padding: 2em 1em;
+}
+
+.reset-btn {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 10%;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: var(--clr-grape);
+  color: var(--clr-blush);
+  font-weight: 500;
+  font-size: var(--size-xl);
+  border: 2px solid var(--clr-blush);
+  padding: 2em 1em;
+}
+
+.flag-mark {
+  object-fit: contain;
+  height: 15px;
+  width: auto;
+}

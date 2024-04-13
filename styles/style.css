@@ -1,0 +1,42 @@
+:root {
+  /* colors */
+
+  --clr-grape: #34344a;
+  --clr-magenta: #80475e;
+  --clr-blush: #cc5a71;
+  --clr-tile: #c6d8af;
+  --clr-white: #fff8f0;
+  --clr-lavender: #f0e6ee;
+  --clr-mine: #fed766;
+  --clr-win: #577fb2;
+
+  /* sizes */
+  --size-xs: 0.5rem;
+  --size-sm: 0.75rem;
+  --size-md: 1rem;
+  --size-base: 1.25rem;
+  --size-lg: 1.5rem;
+  --size-xl: 1.8rem;
+  --size-2xl: 2rem;
+  --size-3xl: 2.5rem;
+  --size-4xl: 3rem;
+  --size-5xl: 3.5rem;
+  --size-6xl: 4rem;
+  --size-7xl: 5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix sans";
+}
+
+body {
+  width: 100vw;
+  background-color: var(--clr-grape);
+  display: flex;
+}
